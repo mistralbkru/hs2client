@@ -75,8 +75,11 @@ if [ -n "$F_ALL" -o -n "$F_THRIFT" ]; then
     cd $TP_DIR/$THRIFT_BASEDIR
     ./configure CXXFLAGS='-fPIC' --without-qt4 --without-c_glib --without-csharp --without-java --without-erlang --without-nodejs --without-lua --without-python --without-perl --without-php --without-php_extension --without-ruby --without-haskell --without-go --without-d --with-cpp --prefix=$PREFIX
 
+	make -j 1
+
+
 	# This must be removed with Thrift 0.9.3, but required for Thrift 0.9.1
-	make clean
+	#make clean
     make install
   fi
 fi
