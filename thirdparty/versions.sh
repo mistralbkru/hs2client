@@ -1,4 +1,4 @@
-THRIFT_VERSION=0.9.2
+THRIFT_VERSION=0.9.3
 THRIFT_URL="http://archive.apache.org/dist/thrift/${THRIFT_VERSION}/thrift-${THRIFT_VERSION}.tar.gz"
 THRIFT_BASEDIR=thrift-$THRIFT_VERSION
 
