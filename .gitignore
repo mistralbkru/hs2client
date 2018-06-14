@@ -1,6 +1,6 @@
 *~
 build/
-thirdparty
+#thirdparty
 
 # CMake:
 Makefile
@@ -11,3 +11,36 @@ CTestTestfile.cmake
 !CMakeLists.txt
 Testing/
 install_manifest.txt
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

@@ -65,3 +65,6 @@ Currently, only in-source builds are working:
 cmake .
 make -j4
 ```
+
+open /usr/local/src/apche-thrift/lib/cpp/src/thrift/transport/TSSLSocket.cpp with your favorite text editor search for SSLv3 change the second occurrence ctx_ = SSL_CTX_new(SSLv3_method()); by ctx_ = SSL_CTX_new(SSLv23_method()); worked for me
+TSSLSocket.cpp.zip
